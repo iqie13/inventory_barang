@@ -13,7 +13,9 @@ class Routes extends koneksi {
     public function accessRules() {
         return array(
             'administrator'=>array(
-                'user','inventoryStock','article','event','supplier','dashboard','supplier','order','logout'
+                'user' => array ('admin', 'allProcess', 'blokiraAsd', 'blokirUser', 'changePhoto', 'deleteUser', 'proses', 'staffCreate', 'update', 'user', 'userCreate', 'usernameValid', 'viewStaff'),
+                'dashboard' => array('dashboard', 'Proses'),
+                'inventory' => array(''),
             ),
             'staff'=>array(
                 'dashboard','supplier','inventoryStock','order', 'logout'

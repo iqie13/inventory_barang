@@ -118,7 +118,10 @@ $auto = $db->autoComplete();
 	                success : function(data){
 	                    $( "#dialog-conf" ).dialog( "close" );
 	                    location.reload();                 
-	                }
+					},
+					error : function() {
+						alert('Error');
+					}
 	            });
 			},
 			No: function() {

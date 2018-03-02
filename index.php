@@ -160,7 +160,7 @@ include('lib/function.php');
                 unset($pages[0], $pages[1]);
 
                 if(in_array($p.'.php', $pages) && !empty($access[$jobName])){
-                    if(in_array($p, $access[$jobName])) {
+                    if(in_array($f, $access[$jobName])) {
                         include($pages_dir.'/'.$p.'.php');
                     }else{
                         include('pages/error_403.php');
