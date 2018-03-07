@@ -159,8 +159,8 @@ include('lib/function.php');
                 $pages = scandir($pages_dir, 0);
                 unset($pages[0], $pages[1]);
 
-                if(in_array($p.'.php', $pages) && !empty($access[$jobName])){
-                    if(in_array($f, $access[$jobName])) {
+                if(in_array($p.'.php', $pages) && !empty($access[$jobName][$f])){
+                    if(in_array($p, $access[$jobName][$f])) {
                         include($pages_dir.'/'.$p.'.php');
                     }else{
                         include('pages/error_403.php');
