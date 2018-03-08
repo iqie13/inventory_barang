@@ -18,6 +18,7 @@ class Routes extends koneksi {
                 'inventory' => array('admin', 'data_grid', 'form_create', 'form_update', 'InventoryModel', 'inventoryStock', 'save', 'stockJson', 'supplierList', 'update', 'view'),
                 'login' => array('Login', 'logout'),
                 'master' => array('admin', 'create', 'deactiveSupplier', 'form_update', 'save', 'supplier', 'SupplierModel', 'update'),
+                'timeout' => array('session_timeout'),
             ),
             'staff'=>array(
                 'dashboard','supplier','inventoryStock','order', 'logout'
