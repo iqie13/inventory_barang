@@ -21,7 +21,9 @@ class Routes extends koneksi {
                 'timeout' => array('session_timeout'),
             ),
             'staff'=>array(
-                'dashboard','supplier','inventoryStock','order', 'logout'
+                'dashboard' => array('dashboard', 'Proses'),
+                'login' => array('Login', 'logout'),
+                'timeout' => array('session_timeout'),
             ),
         );
     }
